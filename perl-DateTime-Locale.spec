@@ -1,6 +1,6 @@
 Name:           perl-DateTime-Locale
 Version:        0.45
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        Localization support for DateTime.pm
 # package itself is 'same terms as Perl'
 # modules under DateTime/Locale/ are generated from data provided by the CLDR project
@@ -61,6 +61,9 @@ find %{buildroot} -depth -type d -exec rmdir {} 2>/dev/null \;
 %{_mandir}/man3/*
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.45-6
+- Mass rebuild 2013-12-27
+
 * Tue Nov 13 2012 Marcela Mašláňová <mmaslano@redhat.com> - 0.45-5
 - Add BR, fix whitespaces
 
